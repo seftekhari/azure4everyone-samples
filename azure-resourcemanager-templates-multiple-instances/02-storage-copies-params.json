@@ -16,7 +16,7 @@
         {
             "type": "Microsoft.Storage/storageAccounts", 
             "apiVersion": "2019-06-01",
-            "name": "[concat('storage', uniqueString(resourceGroup().id), parameters('storages')[copyIndex('copystorage')])]",
+            "name": "[concat('stg', uniqueString(resourceGroup().id), parameters('storages')[copyIndex('copystorage')])]",
             "location": "[resourceGroup().location]",
             "kind": "StorageV2",
             "sku": {
