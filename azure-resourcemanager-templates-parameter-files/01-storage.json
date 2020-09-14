@@ -1,11 +1,11 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
+    "contentVersion": "1.0.1.1",
     "parameters": {
         "storageAccountName": {
             "type": "string",
-            "minLength": 3,
-            "maxLength": 24,
+            "minLength": 4,
+            "maxLength": 23,
             "metadata": {
                 "description": "Unique DNS name of your storage account."
             }
